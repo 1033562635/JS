@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<title></title>
+<style>
+*{margin:0;padding:0;list-style:none;}
+.load-more{position:fixed;width:100%;height:100%;}
+.load-more .load-more-main{overflow:hidden;}
+.upper{height:1000px;background:red;width:100%;overflow:hidden;}
+.load-status{height:30px;text-align:center;line-height:30px;color:#000;font-size:14px;}
+.lower{height:1000px;background:yellow;overflow:hidden;}
+.animation{transition:all 0.3s;}
+</style>
+</head>
+
+<body style="background: #fff;">
+	<div class="load-more">
+		<div class="load-more-main">
+			<div class="upper">
+				<img width="100%" height="2000px" src="img/slideMore1.jpg">
+			</div>
+			<div class="load-status">往上拉加载更多~</div>
+			<div class="lower">
+				<img width="100%" height="2000px" src="img/slideMore2.jpg">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/Wslide.js"></script>
+<script type="text/javascript">
+	var loadMore=new loadMore({dom:'.load-more'});
+</script>
+</html>
